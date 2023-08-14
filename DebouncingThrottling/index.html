@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heading {
+            text-align: center;
+            border: 2px red solid;
+            margin-bottom: 4px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">Debouncing & Throttling</div>
+    <h2>Debouncing Example</h2>
+    <div class="container">
+        <div>
+            <input type="text" placeholder="search" id="inputSearch">
+            <!-- Input Search Devounce -->
+            <div id="text"></div>
+            <div id="triggered"></div>
+            <div id="debounce_triggered"></div>
+        </div>
+        <!-- Button Pressed Debounc -->
+        <div>
+            <button class="buttonClicked" onclick="btnClickedFunction()">Click Me</button>
+            <div id="btn_clicked"></div>
+            <div id="btn_clicked_debounced"></div>
+        </div>
+
+    </div>
+    <h2>Throttling Example</h2>
+    <div>
+        <button class="buttonClicked_throttle" onclick="btnClickedFunctionThrottle()">Click Me</button>
+        <div id="btn_clicked_throttle_basic"></div>
+        <div id="btn_clicked_throttle"></div>
+    </div>
+    <script src="/debounce.js"></script>
+    <script src="./throttling.js"></script>
+</body>
+
+</html>
