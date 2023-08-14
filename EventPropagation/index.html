@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer_div {
+            border: 2px red solid;
+            padding: 20px;
+        }
+
+        form {
+            border: 4px blue dashed;
+            padding: 20px;
+
+        }
+
+        button {
+            border: 4px green solid;
+            padding: 20px;
+
+        }
+
+        .event_delegation__span {
+            display: block;
+            border: red 2px solid;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Event Propagation</h1>
+    <div class="outer_div">DIV
+        <form>FORM
+            <button>Click Here for <span class="event_prop"></span></button>
+        </form>
+    </div>
+    <div class="target"></div>
+
+    <h1>Event Delegation</h1>
+    <div class="event_delegation">
+        <span class="event_delegation__span">react</span>
+        <span class="event_delegation__span">nextjs</span>
+        <span class="event_delegation__span">javascript</span>
+    </div>
+    <!-- <script src="./Bubbling.js"></script> -->
+    <!-- <script src="./Capturing.js"></script> -->
+    <!-- <script src="./StopPropagation.js"></script> -->
+    <!-- <script src="./TargettingElememts.js"></script> -->
+    <script src="./EventDelegation.js"></script>
+</body>
+
+</html>

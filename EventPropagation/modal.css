@@ -1,0 +1,23 @@
+.modal_inner {
+  background-color: beige;
+  position: absolute;
+  padding: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal_outer {
+  background-color: rgba(252, 249, 249, 0.882);
+  height: 100%;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+body > p {
+  font-size: 17px;
+}
